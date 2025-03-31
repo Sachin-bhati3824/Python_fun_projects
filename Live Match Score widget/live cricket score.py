@@ -107,7 +107,7 @@ def live_score(Team_1,update_var):
             for i in range(len(Team_2_info)):
                 if Team_2_info[i] in uppercase_letters:
                     k += 1  
-            Team_2 = Team_2_info[:k]
+            Team_2 = Team_2_info[:k-1]
             Team_2_info = Team_2_info[k- 1 :]
 
             if Team_2 == '':
