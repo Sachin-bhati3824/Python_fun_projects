@@ -107,11 +107,8 @@ def live_score(Team_1,update_var):
             for i in range(len(Team_2_info)):
                 if Team_2_info[i] in uppercase_letters:
                     k += 1  
-            for i in range(len(Team_2_info)):
-                if Team_2_info[i] in uppercase_letters:
-                    Team_2+= Team_2_info[i]
-                else:
-                    break
+            extra = Team_2_info
+
             Team_2_info = Team_2_info[k- 1 :]
 
             if Team_2 == '':
@@ -119,6 +116,11 @@ def live_score(Team_1,update_var):
             
             if Team_2_info in uppercase_letters :
                 Team_2_info = "Yet to play"
+
+            if Team_2_info == "Yet to play":
+                Team_2 == extra[:k-1]
+            else:
+                Team_2 == extra[:k]
             
             update_var["Team_1"].set(Team_1)
             update_var["Team_2"].set(Team_2)
