@@ -4,7 +4,6 @@ import os
 import time
 import math 
 import reedsolo 
-from PIL import Image
 import matplotlib.pyplot as plt
 
 
