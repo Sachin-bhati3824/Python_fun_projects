@@ -10,7 +10,7 @@ import string
 import threading
 
 
-uppercase_letters = string.ascii_uppercase
+uppercase_letters = string.ascii_uppercase  
 root = tk.Tk()
 root.geometry("250x123")
 root.title("Live Score")
@@ -104,23 +104,29 @@ def live_score(Team_1,update_var):
             Team_1 = Team_1_info[:j-1]
             Team_1_info = Team_1_info[j- 1 :]
             k= 0 
+            
             for i in range(len(Team_2_info)):
                 if Team_2_info[i] in uppercase_letters:
                     k += 1  
-            extra = Team_2_info
 
+            extra = Team_2_info
+            Team_2 = '' 
+            for i in range(len(Team_2_info)):
+                if Team_2_info[i] in uppercase_letters:
+                    Team_2 += Team_2_info[i]
+                else:
+                    break
             Team_2_info = Team_2_info[k- 1 :]
 
-            if Team_2 == '':
-                Team_2 = "---"
-            
+           
+       
             if Team_2_info in uppercase_letters :
                 Team_2_info = "Yet to play"
 
-            if Team_2_info == "Yet to play":
-                Team_2 == extra[:k-1]
-            else:
-                Team_2 == extra[:k]
+
+
+
+                
             
             update_var["Team_1"].set(Team_1)
             update_var["Team_2"].set(Team_2)
