@@ -1,0 +1,34 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# SQLite database files
+*.sqlite3
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+env/
+
+# IDE/editor config
+.vscode/
+.idea/
+*.swp
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Coverage/testing
+.coverage
+htmlcov/
+coverage.xml
+
+# Migrations 
+**/migrations/*.pyc
+**/migrations/__pycache__/

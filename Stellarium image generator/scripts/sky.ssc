@@ -1,0 +1,16 @@
+
+var path = "D:/Stellarium project/output"
+core.setDate("2025-07-03T21:00:00");
+core.setObserverLocation("26.2389, 73.0243");
+LandscapeMgr.setFlagLandscapeUseMinimalBrightness (false);
+MilkyWay.setIntensity(4)
+LandscapeMgr.setFlagLandscape(true);
+LandscapeMgr.setFlagAtmosphere(false);
+core.setGuiVisible(false);
+
+// View east at 45 elevation
+core.moveToAltAzi(89, 90);  // Altitude 89, Azimuth 90 (East)
+StelMovementMgr.zoomTo(130, 1);
+core.wait(1);
+core.screenshot("sky",false,path,true);
+core.quitStellarium();

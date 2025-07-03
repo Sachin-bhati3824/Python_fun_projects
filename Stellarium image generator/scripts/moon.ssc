@@ -1,0 +1,17 @@
+
+var path = "D:/Stellarium project/output"
+
+core.clear("natural");
+LandscapeMgr.setFlagLandscape(false);
+LandscapeMgr.setFlagAtmosphere(false);
+LandscapeMgr.setFlagFog(false);
+core.setDate("2025-07-03T20:00:00");
+core.selectObjectByName("Moon", false);
+StelMovementMgr.setFlagTracking(true);
+StelMovementMgr.zoomTo(0.547, 2); 
+core.wait(2)
+core.setGuiVisible(false);
+StelMovementMgr.autoZoomIn(2);
+core.setTimeRate(0.0);
+core.screenshot("moon",false,path,true);
+core.quitStellarium();
