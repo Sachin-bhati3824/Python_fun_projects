@@ -48,6 +48,13 @@ LandscapeMgr.setFlagLandscape(true);
 LandscapeMgr.setFlagAtmosphere(false);
 core.setGuiVisible(false);
 
+//set flag labels 
+LandscapeMgr.setFlagLabels(false)
+AsterismMgr.setFlagLabels(false)
+ConstellationMgr.setFlagLabels(false)
+SolarSystem.setFlagLabels(false)
+StarMgr.setFlagLabels(false)
+
 // View east at 45 elevation
 core.moveToAltAzi(89, 90);  // Altitude 89, Azimuth 90 (East)
 StelMovementMgr.zoomTo(130, 1);
