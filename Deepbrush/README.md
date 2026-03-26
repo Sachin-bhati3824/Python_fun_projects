@@ -18,25 +18,9 @@ A desktop application that lets you generate AI images just by describing what y
 
 ## 🖼️ Preview
 
-```
-┌──────────────────────────────────────────────────────┐
-│  // IMAGE GEN                    powered by DeepAI   │
-│ ════════════════════════════════════════════════════ │
-│  ENTER PROMPT                                        │
-│ ┌─────────────────────────────────────┬────────────┐ │
-│ │  a cyberpunk cat in neon rain...    │ GENERATE → │ │
-│ └─────────────────────────────────────┴────────────┘ │
-│                                                      │
-│            ┌─────────────────────┐                   │
-│            │                     │                   │
-│            │   [generated image] │                   │
-│            │                     │                   │
-│            └─────────────────────┘                   │
-│    Saved → C:\...\generated.jpg                      │
-└──────────────────────────────────────────────────────┘
-```
-
 ---
+
+<img width="702" height="992" alt="image" src="https://github.com/user-attachments/assets/1357467d-ebf5-4eb6-a432-39d0a6969482" />
 
 ## 📁 Project Structure
 
